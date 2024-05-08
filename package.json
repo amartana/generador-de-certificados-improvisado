@@ -1,0 +1,16 @@
+{
+  "name": "cert",
+  "version": "1.0.0",
+  "description": "- 👉 Nombre de la plantilla de canva → *template.jpg* (de usar otro nombre modificar el valor de la variable **template**)\r - 👉 Nombre del listado para asistencia → *nombres.csv* (de usar otro nombre modificar el valor de la variable **presentes**)\r - 👉 Nombre de la key con los nombres",
+  "main": "generador.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "papaparse": "^5.4.1"
+  }
+}
