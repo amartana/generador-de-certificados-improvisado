@@ -11,6 +11,10 @@
 npm install
 ```
 
+### 3) Correr el codigo
+Abrir el archivo **generador.js** con *Visual Studio Code* y apretar Ctrl+Alt+N   
+ → Hay que tener instalada la extension de Code Runner ←
+
 ## 💥 IMPORTANTE ❗
 
 ### - Plantilla de canva:
@@ -26,7 +30,7 @@ npm install
   (*Es el item en el que se pidió en el forms que completen su nombre y apellido*).
   
  En la linea 1 del archivo nombres.csv se va a ver así 👇   
-      
+
   ![alt text](README-image.png)    
 Si el nombre es exactamente el que se ve en la imagen, osea **'APELLIDO/S, NOMBRE/S:'**,  no cambiar nada, si es otro copiarlo tal cual, con comillas y todo, y pegarlo en la variable *keyNames*
 
