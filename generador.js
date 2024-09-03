@@ -1,9 +1,10 @@
 const fs = require('fs');
 const Papa = require('papaparse');
 const { createCanvas, loadImage } = require('canvas');
-const presentes = 'nombres.csv';
-const template = 'template.jpg';
+const presentes = './archivos/nombres.csv';
+const template = './archivos/template.jpg';
 const keyNames = 'APELLIDO/S, NOMBRE/S:';
+const carpeta = 'certificados'
 
 
 // lee el archivo CSV 
@@ -47,7 +48,11 @@ function generarCertificado(name) {
         ctx.fillText(name.toUpperCase(), xPosition, yPosition);
 
         // guardar
-        const output = fs.createWriteStream(`certificados/${name}.jpg`);
+        if (!fs.existsSync(carpeta)) {
+            // Si no existe, crear la carpeta
+            fs.mkdirSync(carpeta);
+        }
+        const output = fs.createWriteStream(`${carpeta}/${name}.jpg`);
         const stream = canvas.createJPEGStream();
         stream.pipe(output);
     });
